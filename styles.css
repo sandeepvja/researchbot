@@ -1,0 +1,91 @@
+:root {
+    box-sizing: border-box;
+    --hero-background: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    
+    /*linear-gradient(-150deg, #281483 15%, #8f6ed5 70%, #d782d9 94%);
+    /*linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);*/
+    /*linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%); */
+    /*linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);*/
+    /*linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);*/
+    
+    --main-brand-color: white;
+    --light-shades: #FAFAFA;
+    --text-color: black;
+    --text-color-light: white;
+    --nav-background-white: rgba(255, 255, 255, 0.95);
+    scroll-behavior: smooth;
+}
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+.brand {
+    font-weight: 300;
+    font-size: 1.5em;
+    line-height: 0.65;
+    font-family: 'Lobster', cursive;
+}
+.nav-header-dark {
+    color: var(--text-color-light);
+    font-weight: bold;
+}
+.nav-header-dark > a {
+    color: var(--text-color-light);
+    text-decoration: none;
+}
+.nav-header-light {
+    color: var(--text-color);
+    font-weight: bold;
+    background-color: white;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+}
+.nav-header-light > a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+.jumbotron {
+    background: transparent;
+    color: var(--text-color-light);
+    margin-bottom: 0px;
+}
+
+.navbar-light .navbar-brand {
+    color: var(--text-color);
+}
+.research-main {
+    background-color: transparent;
+}
+.site-intro {
+    list-style: none;
+    margin-left: 0.5em;
+    padding-left: 0.5em;
+}
+.site-intro li:before {
+    content: '✓ '; 
+}
+body {
+    font-family: 'Armata';
+    font-style: normal;
+    font-weight: 400;    
+    color: var(--text-color);
+    
+}
+.hero {
+    background-color: #4158D0;  
+    background-image: var(--hero-background);
+}
+.card-header {
+    background: var(--hero-background);
+    color: white;
+}
+.btn-primary {
+    background: #8BC6EC;
+    border: #8BC6EC;
+}
+.gray-section {
+    background-color: #F5F5F5;
+}
+.white-section {
+    background-color: white;
+}
