@@ -1,5 +1,123 @@
 <html>
-  <body>
-    <h1>Testing website</h1>
-  </body>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Research Bot</title>
+    <!-- Including the bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="google-signin-client_id" content="519137910126-3vq2d3dk4ev9iqpa0j6hlpbpvjrps8jv.apps.googleusercontent.com">
+</head>
+
+<body class="container-fluid px-0">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <div class="hero">
+        <nav class="navbar navbar-expand-lg nav-header-dark nav-header fixed-top">
+            <img src="open-book.png" height="25" width="25"/>
+            <a class="brand navbar-brand text-uppercase ml-2" href="/">Conciser</a>
+            <a class="text-capitalize ml-3" href="#summarizer">Summarizer</a>
+            <a class="text-capitalize ml-3" href="#pricing">Pricing</a>
+            <ul class="ml-auto navbar-nav">
+                <li class="nav-item">
+                    <div id="g_id_onload"
+                        data-client_id="519137910126-3vq2d3dk4ev9iqpa0j6hlpbpvjrps8jv.apps.googleusercontent.com"
+                        data-login_uri="https://accounts.google.com/o/oauth2/auth" data-auto_prompt="false">
+                    </div>
+                    <div class="g_id_signin" data-type="standard" data-size="large" data-theme="filled_blue"
+                        data-text="signup_with" data-shape="rectangle" data-logo_alignment="left">
+                </li>
+            </ul>
+            <div class="g-signup2" data-type="standard" data-size="large" data-onsuccess="onSignIn"></div>
+        </nav>
+        <header class="jumbotron">
+            <h1 class="display-5">Easily summarize your research papers</h1>
+            <ul class="site-intro">
+                <li>Download your research paper from IEEE, Elsvier etc</li>
+                <li>Browse your computer or drag and drop your research paper</li>
+                <li>Get your document summarize by submitting the paper</li>
+                <li>You could summarize three papers per month for free</li>
+                <li>If need more than three, check our easy pricing plans below</li>
+            </ul>
+        </header>
+    </div>
+    <main class="research-main">
+        <div id="summarizer" class="p-4 gray-section">
+            <form class="container mb-3">
+                <h2 class="h2">Summarize your research paper</h1>
+                    <div class="row col-4 mb-3">
+                        <label for="formFile" class="form-label">Upload your paper</label>
+                        <input class="form-control" type="file" id="formFile">
+                    </div>
+                    <div class="row col-4">
+                        <button type="button" class="btn btn-primary">Summarize</button>
+                    </div>
+            </form>
+        </div>
+        <div id="pricing" class="p-4 white-section">
+            <div class="container p-4">
+                <div class="card-deck mb-3 text-center">
+                    <div class="card mb-4 shadow">
+                        <div class="card-header">
+                            <h4 class="my-0">Free</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title h3">$0 / mo</h1>
+                            <hr/>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <l1>3 summarized document per month</l1>
+                                <li>Email Support</li>
+                            </ul>
+                        </div>
+                        <button type="button" class="btn btn-lg btn-block btn-primary">Sign up for free</button>
+                    </div>
+                    <div class="card mb-4 shadow">
+                        <div class="card-header">
+                            <h4 class="my-0">Pro</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title h3">$4 / mo</h1>
+                            <hr/>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>100 summarized document per month</li>
+                                <li>Single User</li>
+                                <li>Priority Support</li>
+                            </ul>
+                        </div>
+                        <button type="button" class="btn btn-lg btn-block btn-primary">Get Started</button>
+                    </div>
+                    <div class="card mb-4 shadow">
+                        <div class="card-header">
+                            <h4 class="my-0">Corporate</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title h3">Contact Us</h1>
+                            <hr/>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Muliple Users</li>
+                                <li>SSO login support</li>
+                                <li>Additional storage</li>
+                            </ul>
+                        </div>
+                        <button type="button" class="btn btn-lg btn-block btn-primary">Contact Us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            
+        </footer>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="jquery.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</body>
+
 </html>
